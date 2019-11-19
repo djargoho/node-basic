@@ -5,7 +5,7 @@ const path = require("path");
 
 const filePath = __dirname + path.sep;
 
-fs.copyFile(filePath + "readme4.txt", filePath + "writeme4.txt", err => {
+fs.copyFile(filePath + "readme4.txt", filePath + "writeme5.txt", err => {
   if (err) {
     return console.error(err);
   }
