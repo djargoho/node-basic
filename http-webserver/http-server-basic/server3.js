@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
   console.log("cookies", cookies);
   //Set-Cookie는 브라우저한테 다음과 같은 값의 쿠키를 저장하라는 의미 , 실제로 응답을 받은 브라우저는 mycookie=test라는 쿠키를 저장, 서버는 브라우저한테 이 쿠키 저장해 라고 명령 한것
   res.writeHead(200, { "Set-Cookie": "mycookie=test" }); 
-  res.end("Hello Cookie");
+  res.end("Hello Cookie!");
 });
 
 server.listen(8082, () => {
